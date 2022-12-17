@@ -7,7 +7,7 @@
 
 local healthHide = false --moves your head away every 3 seconds so players dont see your health bar
 local reclaim = true --if you lost control over a part this will move your primary part to the part so you get it back
-local novoid = false --prevents parts from going under workspace.FallenPartsDestroyHeight if you control them
+local novoid = true --prevents parts from going under workspace.FallenPartsDestroyHeight if you control them
 local discharscripts = true --disables all localScripts parented to your character before reanimation
 local R15toR6 = true --adds fake r6 parts and joints for animations if your character is r15
 local hatcollide = false --makes hats cancollide (credit to ShownApe) (only method 0)
@@ -648,7 +648,6 @@ RootJoint.C0 = RootJoint.C0:Lerp(cf(0, 0, 0) * angles(-0.8726646259971648 + 0.08
     end,
     walk = function(deltaTime)
         local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
-local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
 Neck.C0 = Neck.C0:Lerp(cf(0, 1, 0) * angles(-1.7453292519943295, 0, 3.141592653589793), deltaTime) 
 AccessoryWeld.C0 = AccessoryWeld.C0:Lerp(cf(0.0417022705078125, 0.5644102096557617, -0.01811981201171875) * angles(0, 6.283185307179586 * sin(sine * 2), 0), deltaTime) 
 LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1, 0) * angles(-0.3490658503988659, -1.5707963267948966, 0), deltaTime) 
@@ -662,7 +661,6 @@ RightShoulder.C0 = RightShoulder.C0:Lerp(cf(1, 0.5, 0) * angles(40.1425727958695
     end,
     jump = function(deltaTime)
         local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
-local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
 AccessoryWeld.C0 = AccessoryWeld.C0:Lerp(cf(8.657480066176504e-09, 0.34999990463256836, 0.2497277557849884) * angles(0, 6.283185307179586 * sin(sine * 1), 0), deltaTime) 
 LeftShoulder.C0 = LeftShoulder.C0:Lerp(cf(-1, 0.5, 0) * angles(-0.5235987755982988, -1.3962634015954636, 0), deltaTime) 
 AccessoryWeld.C0 = AccessoryWeld.C0:Lerp(cf(0.0417022705078125, 0.5644102096557617, -0.01811981201171875) * angles(0, 6.283185307179586 * sin(sine * 1), 0), deltaTime) 
@@ -676,7 +674,6 @@ RightShoulder.C0 = RightShoulder.C0:Lerp(cf(1, 0.5, 0) * angles(0.52359877559829
     end,
     fell = function(deltaTime)
         local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
-local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
 RightHip.C0 = RightHip.C0:Lerp(cf(1, -1, 0) * angles(0, 1.5707963267948966, 0), deltaTime) 
 LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1, 0) * angles(0, -1.5707963267948966, 0), deltaTime) 
 RootJoint.C0 = RootJoint.C0:Lerp(cf(0, 0, 0) * angles(-4.537856055185257, 0, 3.141592653589793), deltaTime) 
