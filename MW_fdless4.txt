@@ -24,7 +24,7 @@ local method = 3 --reanimation method
 --2 - limbs + anti respawn
 --3 - limbs + breakJoints after [loadtime] seconds
 --4 - remove humanoid + breakJoints
-local flingpart = "HumanoidRootPart" --the name of the part or the hat used for flinging
+local flingpart = "DarkFlameAura" --the name of the part or the hat used for flinging
 local maxflingtrsp = 0.5 --max transparency of the fling part (if its above this it will be set to this)
 --the fling function
 --usage: fling(humanoid, 3, 666)
