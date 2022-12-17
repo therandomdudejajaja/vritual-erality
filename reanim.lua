@@ -9,7 +9,7 @@ local UseAnimation = true -- SpoofClientCharacter must be true.
 local SpoofClientCharacter = true -- Makes Player.Character return your clone. If you want animations do true.
 local CustomResetCharacter = true
 local ResetCharacterInVoid = true
-local CanCharacterCollide = false
+local CanCharacterCollide = true
 ----------------------------------------------------------------------------------------------------------------------------------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OpenGamerTips/TextBin/master/primary_ownership_isnt_patched.lua"))()
 wait(0.2)
