@@ -646,13 +646,14 @@ RightHip.C0 = RightHip.C0:Lerp(cf(1, -1, 0) * angles(0, 1.2217304763960306, -0.1
     end,
     walk = function(deltaTime)
         local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
-LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1, 0) * angles(0, -1.5707963267948966, 0), deltaTime) 
-RootJoint.C0 = RootJoint.C0:Lerp(cf(0, 0, 0) * angles(-8.377580409572781, 0, 3.141592653589793), deltaTime) 
-RightShoulder.C0 = RightShoulder.C0:Lerp(cf(1, 0.5, 0) * angles(0, 1.5707963267948966, 0), deltaTime) 
-RightHip.C0 = RightHip.C0:Lerp(cf(1, -1, 0) * angles(0, 1.5707963267948966, 0), deltaTime) 
-LeftShoulder.C0 = LeftShoulder.C0:Lerp(cf(-1, 0.5, 0) * angles(0, -1.5707963267948966, 0), deltaTime) 
-Neck.C0 = Neck.C0:Lerp(cf(0, 1, 0) * angles(-1.5707963267948966, 0, 3.141592653589793), deltaTime) 
---DarkFlameAuraTop_Handle,0.04864501953125,0,0,1,-0,0,0,1,0.002541840076446533,0,0,1,0,0,0,1,-0.0140838623046875,0,0,1,-0,0,0,1,LeftLeg,-1,0,0,1,-0,0,0,1,-1,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,Torso,0,0,0,1,-480,,0,1,0,0,0,1,-0,0,0,1,0,0,0,1,180,0,0,1,PalHair_Handle,8.657480066176504e-09,0,0,1,0,0,0,1,0.34999990463256836,0,0,1,0,0,0,1,0.2497277557849884,0,0,1,0,0,0,1,RightArm,1,0,0,1,0,0,0,1,0.5,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1,RightLeg,1,0,0,1,0,0,0,1,-1,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1,LeftArm,-1,0,0,1,-0,0,0,1,0.5,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,DarkFlameAura_Handle,0.0417022705078125,0,0,1,-0,0,0,1,0.5644102096557617,0,0,1,0,0,0,1,-0.01811981201171875,0,0,1,-0,0,0,1,Head,0,0,0,1,-90,0,0,1,1,0,0,1,-0,0,0,1,0,0,0,1,180,0,0,1
+local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
+LeftShoulder.C0 = LeftShoulder.C0:Lerp(cf(-1, 0.5, 0) * angles(-6.283185307179586 * sin(sine * 5), -1.5707963267948966, 0), deltaTime) 
+LeftHip.C0 = LeftHip.C0:Lerp(cf(-1, -1, 0) * angles(6.283185307179586 * sin(sine * 4), -1.5707963267948966, 0), deltaTime) 
+RootJoint.C0 = RootJoint.C0:Lerp(cf(0, 0, 0) * angles(-8.028514559173916 + 6.283185307179586 * sin(sine * 5), 0, 3.141592653589793), deltaTime) 
+Neck.C0 = Neck.C0:Lerp(cf(0, 1, 0) * angles(-1.5707963267948966, 0, 3.141592653589793 + 6.283185307179586 * sin(sine * 5)), deltaTime) 
+RightShoulder.C0 = RightShoulder.C0:Lerp(cf(1, 0.5, 0) * angles(6.283185307179586 * sin(sine * 5), 1.5707963267948966, 0), deltaTime) 
+RightHip.C0 = RightHip.C0:Lerp(cf(1, -1, 0) * angles(6.283185307179586 * sin((sine + 10) * 4), 1.5707963267948966, 0), deltaTime) 
+--LeftArm,-1,0,0,1,-0,-360,0,5,0.5,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,LeftLeg,-1,0,0,1,-0,360,0,4,-1,0,0,1,-90,0,0,1,0,0,0,1,0,0,0,1,DarkFlameAura_Handle,0.0417022705078125,0,0,1,-0,0,0,1,0.5644102096557617,0,0,1,0,0,0,1,-0.01811981201171875,0,0,1,-0,0,0,1,Torso,0,0,0,1,-460,360,0,5,0,0,0,1,0,0,0,1,0,0,0,1,180,0,0,1,Head,0,0,0,1,-90,,0,1,1,0,0,1,-0,0,0,1,0,0,0,1,180,360,0,5,RightArm,1,0,0,1,0,360,0,5,0.5,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1,PalHair_Handle,8.657480066176504e-09,0,0,1,0,0,0,1,0.34999990463256836,0,0,1,0,0,0,1,0.2497277557849884,0,0,1,0,0,0,1,DarkFlameAuraTop_Handle,0.04864501953125,0,0,1,-0,0,0,1,0.002541840076446533,0,0,1,0,0,0,1,-0.0140838623046875,0,0,1,-0,0,0,1,RightLeg,1,0,0,1,0,360,10,4,-1,0,0,1,90,0,0,1,0,0,0,1,0,0,0,1
     end,
     jump = function(deltaTime)
         local cf, angles, sin = CFrame.new, CFrame.Angles, math.sin 
