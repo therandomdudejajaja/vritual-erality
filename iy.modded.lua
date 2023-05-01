@@ -21,7 +21,7 @@ local IS_Settings = {
 	),
 }
 
-local ann = "Update 1.0.9, Released? No, it doesnt works"
+local ann = "Update 1.0.8 made by Pagac, keffori is learning english and im taking it all. he also betrayed himself by getting mad over minecraft"
 local _UserSettings = {
 	["StartMinimized"] = false,
 	["SafeMode"] = true,
