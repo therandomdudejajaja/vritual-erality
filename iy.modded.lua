@@ -15,7 +15,7 @@ end
 local IS_Settings = {
 	["Version"] = "1.0.8",
 	["Invite"] = "SkAneeutak",
-	["Plugins"] = LoadUrl("https://raw.githubusercontent.com/Keffori/Infinite-Store/main/sources.luau"),
+	["Plugins"] = LoadUrl("https://raw.githubusercontent.com/BaconDave312/vritual-erality/pluggeds.lua"),
 	["NsfwPlugins"] = LoadUrl(
 		"https://cdn.jsdelivr.net/gh/Infinite-Store/Infinite-Store@main/plugins/nsfwplugins/sources.luau"
 	),
