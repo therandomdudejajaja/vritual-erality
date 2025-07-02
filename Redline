@@ -9477,7 +9477,7 @@ if (_G.RLLOADERROR ~= 0) then
 else
     _G.RLLOADERROR = nil
     
-    ui:Notify(('Redline %s loaded'):format(REDLINEVER), ('Press RightControl to open up the menu. THIS IS NOT MADE BY ME. THIS IS AN UWP ADAPTATION, ALL CREDITS GO TO TOPITBOPIT FOR CREATING THE SCRIPT'), 7, 'high')
+    ui:Notify(('Redline %s loaded'):format(REDLINEVER), ('Press RightControl to open up the menu.'), 7, 'high')
 end
 
 -- Teleport queueing (im like 99% confident this doesnt work anymore)
